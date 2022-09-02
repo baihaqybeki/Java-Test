@@ -7,14 +7,14 @@ public class PyramidTest {
 		
 		int count = 5;
 		for (int i = count; i >= 1; i--) {
-		  int tempCount = 0;
+		  int temp = 0;
 		  int j = count - i + 1;
-		  while (tempCount != i) {
+		  while (temp != i) {
 		    if (j % 2 != 0) {
-		      if (!(i % 2 == 0 && tempCount >= i - 1)) {
+		      if (!(i % 2 == 0 && temp >= i - 1)) {
 		    	  System.out.print(j);
 		      }
-		      tempCount++;
+		      temp++;
 		    } else {
 		    	System.out.print("_");
 		    }
